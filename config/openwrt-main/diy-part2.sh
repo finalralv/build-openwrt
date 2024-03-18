@@ -23,9 +23,15 @@ echo "DISTRIB_SOURCECODE='official'" >>package/base-files/files/etc/openwrt_rele
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-amlogic
-#svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-passwall
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-mosdns
+svn co https://github.com/haiibo/openwrt-packages/luci-app-passwall
+svn co https://github.com/haiibo/openwrt-packages/openwrt-passwall
+svn co https://github.com/haiibo/openwrt-packages/luci-app-mosdns
+svn co https://github.com/haiibo/openwrt-packages/luci-app-wrtbwmon
+svn co https://github.com/haiibo/openwrt-packages/luci-app-advanced
+svn co https://github.com/haiibo/openwrt-packages/mosdns
+svn co https://github.com/liuran001/openwrt-packages/sing-box
+svn co https://github.com/liuran001/openwrt-packages/hysteria
+
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/{containerd,libnetwork,runc,tini} feeds/packages/utils
